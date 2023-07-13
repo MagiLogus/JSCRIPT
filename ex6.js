@@ -5,7 +5,6 @@
 // usuário se encontra, de acordo com a tabela a seguir:
 // IMC menor que 18.5: Abaixo do peso
 // IMC de 18.5 a 24.9: Peso normal
-
 // IMC de 25.0 a 29.9: Sobrepeso
 // IMC de 30.0 a 34.9: Obesidade grau 1
 // IMC de 35.0 a 39.9: Obesidade grau 2
@@ -18,9 +17,18 @@ let altura = parseFloat(prompt("digite sua altura: "))
 
 let IMC = (peso / (altura * altura))
 
-if (IMC >= 25.0 && IMC <= 29.9) {
+if (IMC < 18.5) {
     console.log(`Seu IMC é de: ${IMC}
-    Estando em: Sobrepeso
+    Estando em: Abaixo do peso
+    `)
+} else if (IMC >= 18.5 && IMC <= 24.9) {
+    console.log(`Seu IMC é de: ${IMC}
+    Estando em: Obesidade grau 1
+    `)
+}
+else if (IMC >= 25.0 && IMC <= 29.9) {
+    console.log(`Seu IMC é de: ${IMC}
+    Estando em: Obesidade grau 1
     `)
 } else if (IMC >= 30.0 && IMC <= 34.9) {
     console.log(`Seu IMC é de: ${IMC}
