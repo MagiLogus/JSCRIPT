@@ -4,8 +4,8 @@
 // foi bem-sucedido ou não.
 
 let prompt = require('prompt-sync')();
-let user = prompt ("Digite seu usuário: ");
-let senha = prompt ("Digite sua senha: ");
+let user = prompt("Digite seu usuário: ");
+let senha = prompt("Digite sua senha: ");
 
 if (user == "admin" && senha == "senha123") {
     console.log(`Usuário correto, você está logado`)

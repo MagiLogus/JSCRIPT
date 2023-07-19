@@ -6,7 +6,7 @@ let prompt = require('prompt-sync')();
 
 let ano = parseInt(prompt("digite seu ano de nascimento: "))
 
-let idade = (2023-ano)
+let idade = (2023 - ano)
 
 if (idade > 17) {
     console.log("Você é maior de idade")
